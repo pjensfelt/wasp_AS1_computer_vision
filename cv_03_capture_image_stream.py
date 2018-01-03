@@ -28,8 +28,8 @@ if capture_device.isOpened(): # try to get the first frame
     is_capturing, image = capture_device.read()
 else:
     is_capturing = False
-    printf("Failed to get even a single image frame")
-    sys.exit(0)
+    print("Failed to get even a single image frame")
+    sys.quit()
 
 # Register a signal handler which will deal with pressing ctrl-c
 signal.signal(signal.SIGINT, signal_handler)
