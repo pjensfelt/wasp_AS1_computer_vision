@@ -29,7 +29,7 @@ if capture_device.isOpened(): # try to get the first frame
 else:
     is_capturing = False
     print("Failed to get even a single image frame")
-    sys.quit()
+    sys.exit()
 
 # Register a signal handler which will deal with pressing ctrl-c
 signal.signal(signal.SIGINT, signal_handler)
@@ -53,4 +53,5 @@ while is_capturing:
     	break
 
 print("Ending by releasing the device")
+cv.destroyAllWindows()
 capture_device.release()
