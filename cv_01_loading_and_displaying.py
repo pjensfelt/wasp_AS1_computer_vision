@@ -24,6 +24,6 @@ cv.imshow('Gray scale image',imageG)
 cv.imshow('Color image', image)
 
 print("The first image window proably ended up below the second one")
-print("Wating for the user to press ENTER with one of the image windows active")
+print("Waiting for the user to press ENTER with one of the image windows active")
 cv.waitKey(0)
 cv.destroyAllWindows()

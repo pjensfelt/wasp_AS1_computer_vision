@@ -27,6 +27,6 @@ capture_device.release()
 # Show the image
 cv.imshow('Color image', image)
 
-print("Wating for the user to press ENTER with one of the image windows active")
+print("Waiting for the user to press ENTER with one of the image windows active")
 cv.waitKey(0)
 cv.destroyAllWindows()
