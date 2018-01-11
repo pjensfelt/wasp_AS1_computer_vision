@@ -51,7 +51,8 @@ def defocus_kernel(d, sz=65):
     return kern
 if __name__ == '__main__':
     print __doc__
-    print "\nPress SPACE or ESC in a window to close them"
+    print "\nPress ESC in a window to close them"
+    print "\nPress SPACE to toggle defocus"
     import sys, getopt
     opts, args = getopt.getopt(sys.argv[1:], '', ['circle', 'angle=', 'd=', 'snr='])
     opts = dict(opts)
@@ -98,7 +99,7 @@ if __name__ == '__main__':
     update(None)
     while True:
         ch = cv2.waitKey() & 0xFF
-        if ch == 27 or key == 32:
+        if ch == 27:
             break
         if ch == ord(' '):
             defocus = not defocus
