@@ -2,7 +2,7 @@ import numpy as np
 import cv2 as cv
 
 # The path to (relative to where jupyter is running) the image to load
-imageName = "test_images/lena.jpg"
+imageName = "test_images/image1.jpg"
 
 # Load the source image
 image = cv.imread(imageName)
